@@ -158,7 +158,31 @@ renderHtml()
 function handlePayClick(){
     const cardDetails= new FormData(formEl)
     const cardDetailsName=cardDetails.get('fullname')
-    formEl.innerHTML=`<p class="text-form">Please Wait, while we complete your card details and package...</p>`
+    formEl.innerHTML=`<p class="text-form">Please Wait, while we complete your card details and package...</p>
+    
+      <svg
+    height="64"
+    viewBox="0 0 100 100"
+    width="64">
+    <circle
+    cx="50"
+    cy='50'
+    fill="none"
+    r="40"
+    stroke-dasharray="60 190"
+    stroke-linecap="round"
+    stroke-width="10"
+    stroke="green">
+    <animateTransform
+    attributeName="transform"
+    attributeType="XML"
+    dur="1s"
+    from="0 50 50"
+    repeatCount="indefinite"
+    to="360 50 50"
+    type='rotate'/></circle>
+    </svg>
+`
 
     setTimeout(function(){
     formEl.style.display="none"
@@ -167,6 +191,6 @@ function handlePayClick(){
     },2500)
     setTimeout(function(){
     document.querySelector(".text-form2").style.display="none"
-    },6000)
+    },8000)
    
 }

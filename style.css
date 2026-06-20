@@ -199,3 +199,7 @@ i{
      margin: auto;
     width: 50%;
 }
+svg{
+   margin:auto;
+   display: block;
+}
